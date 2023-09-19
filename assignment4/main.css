@@ -1,0 +1,164 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: 10% auto 20%;
+	grid-gap: 10px;
+}
+
+.grid-container > div{
+    border: 2px solid grey;
+	font-size: 18px;
+	text-align: center;
+	background-color:azure;
+}
+
+#header{
+	grid-column: 1 / span 3;
+}
+#menu{
+	grid-column: 1 /span 1;
+}
+#main1{
+	grid-column: 2 / span 1;
+}
+
+#right{
+	grid-column: 3 / span 1;
+}
+
+#footer{
+	grid-column: 1 / span 3;
+}
+
+@media only screen and (max-width: 767px) {
+	.grid-container {
+		  display: grid;
+		  grid-template-columns: 20% auto;
+		  grid-gap: 10px;
+		  
+	}
+
+	#header{
+		grid-column: 1/ span 2;
+	}
+	#menu{
+		grid-column: 1/ span 1;
+		text-align: center;
+		display: inline-block;
+	}
+	#main1{
+		grid-column: 2/ span 1;
+	}
+	#right{
+		grid-column: 1 / span 2; 
+	}
+	#footer{
+		grid-column: 1/ span 2;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.grid-container {
+		  display: grid;
+		  grid-template-columns: auto;
+		  grid-gap: 10px;
+		 
+	}
+	#header{
+		grid-column: 1/span 1;
+	}
+	#menu{
+		grid-column: 1/span 1;
+	}
+	#main1{
+		grid-column: 1/span 1;
+	}
+	#right{
+		grid-column: 1/span 1;
+	}
+	#footer{
+		grid-column: 1/span 1;
+	}
+}
+
+h1{
+    color: coral;
+    text-align: center;
+    font-size: 50px;
+}
+h2{
+    background-color: antiquewhite;
+    color: coral;
+    text-align: center;
+    font-size: 30px;
+}
+.ingredient_details{
+    text-align: left;
+}
+ul{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12pt;
+}
+div{
+    text-align: center;
+}
+#ingredients_pic{
+    width: 20%;
+}
+#namjim{
+    width: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#TossChicken{
+    width: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#AddChicken{
+    width: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#Finish{
+    width: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Instruction{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12pt;
+}
+.Pr_pic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	
+}
+.Pr_pic > div{
+    border: 3px solid coral;
+    
+    margin-bottom: 10px;
+    margin-top: 10px;
+	
+}
+hr{
+    width: 850px;
+}
+a:link{
+    color: rgb(245, 181, 6);
+}
+a:visited{
+    color: crimson;
+}
+a:hover{
+    color: cadetblue;
+}
+div a{
+    font-size: 30px;
+}
+#right img{
+	width:80%
+}
+#right div{
+	margin-bottom: 20px;
+}
